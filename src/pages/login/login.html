@@ -15,7 +15,20 @@
 
 
 <ion-content padding>
-  <ion-buttons>
-    <button ion-item (click)="changePage()">Rentrer à la maison</button>
-  </ion-buttons>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Identifiant</ion-label>
+      <ion-input [(ngModel)]="username" name="username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Mot de passe</ion-label>
+      <ion-input [(ngModel)]="password" name="password" type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+    <button ion-button (click)="validLogin(username, password)">Connexion</button>
+
 </ion-content>
