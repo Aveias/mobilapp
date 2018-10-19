@@ -1,0 +1,7 @@
+{
+  "name": "mobilapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
