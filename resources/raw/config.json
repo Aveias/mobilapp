@@ -1,0 +1,55 @@
+{
+  "users":[
+    {
+      "name": "Test",
+      "firstName":"Toto",
+      "email": "toto@mail.com",
+      "password": "totopwd",
+      "balance": 500.0,
+      "lastTransactions": [
+        {
+          "from":"toto@mail.com",
+          "to": "bic@mail.com",
+          "amount": 10.0,
+          "timestamp": 1539861600
+        }
+      ]
+    },
+    {
+      "name": "lePen",
+      "firstName":"Bic",
+      "email": "bic@mail.com",
+      "password": "bicpwd",
+      "balance": 10.0,
+      "lastTransactions": [
+        {
+          "from": "toto@mail.com",
+          "to": "bic@mail.com",
+          "amount": 10.0,
+          "timestamp": 1539861900
+        },
+        {
+          "from":"bic@mail.com",
+          "to":"tata@mail.com",
+          "amount": 200.0,
+          "timestamp": 1539600000
+        }
+      ]
+    },
+    {
+      "name": "tata",
+      "firstName":"",
+      "email": "tata@mail.com",
+      "password": "tataPwd",
+      "balance": 235.0,
+      "lastTransactions": [
+        {
+          "from":"bic@mail.com",
+          "to": "tata@mail.com",
+          "amount": 200,
+          "timestamp": 1539601200
+        }
+      ]
+    }
+  ]
+}

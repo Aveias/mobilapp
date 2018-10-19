@@ -8,19 +8,16 @@
 
   <ion-navbar>
     <ion-title>home</ion-title>
-    <ion-buttons>
-      <button ion-item (click)="closeConnexion()">Disconnect</button>
-    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
   <ion-buttons>
-    <button ion-item (click)="changePage('contact')">Contacts</button>
-    <button ion-item (click)="changePage('buy')">Acheter de la monnaie locale</button>
-    <button ion-item (click)="changePage('send')">Payer</button>
-    <button ion-item (click)="changePage('history')">Historique des transactions</button>
+    <button ion-button (click)="changePage('buy')">Acheter de la monnaie locale</button>
+    <button ion-button (click)="changePage('send')">Payer</button>
+    <button ion-button (click)="changePage('history')">Historique des transactions</button>
+    <button ion-button color="danger" (click)="closeConnexion()">Disconnect</button>
   </ion-buttons>
 
 </ion-content>
