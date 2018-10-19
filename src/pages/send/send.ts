@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {SearchPage} from "../search/search";
 
 /**
  * Generated class for the SendPage page.
@@ -20,6 +21,15 @@ export class SendPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SendPage');
+  }
+
+  changePage(params) {
+    switch (params) {
+      case 'search':{
+        this.navCtrl.push(SearchPage);
+        break;
+      }
+    }
   }
 
 }
