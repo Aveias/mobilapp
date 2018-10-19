@@ -16,8 +16,10 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
 
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
