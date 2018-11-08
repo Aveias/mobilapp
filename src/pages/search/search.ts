@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { GitsonProvider} from "../../providers/gitson/gitson";
 
+
 /**
  * Generated class for the SearchPage page.
  *
@@ -29,7 +30,8 @@ export class SearchPage {
     //TEMPORARY, TO TEST GET HTTP
     this.gitsonProvider.getUrl()
       .then(data => {
-          console.log(data)
+
+        console.log(data['users'][0]);
       })
 
   }
