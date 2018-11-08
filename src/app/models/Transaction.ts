@@ -3,4 +3,5 @@ export class Transaction {
   to: string
   amount: number
   timestamp: number
+  date: string
 }

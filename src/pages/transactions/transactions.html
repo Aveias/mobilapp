@@ -18,7 +18,13 @@
       <ion-item *ngFor="let transactionTest of listTransactions">
         <ion-card>
           <ion-card-content>
-            {{transactionTest}}
+            From : {{transactionTest.from}}
+            <br>
+            To : {{transactionTest.to}}
+            <br>
+            Amount : {{transactionTest.amount}}
+            <br>
+            Date : {{transactionTest.date}}
           </ion-card-content>
         </ion-card>
       </ion-item>
