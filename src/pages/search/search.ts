@@ -22,4 +22,8 @@ export class SearchPage {
     console.log('ionViewDidLoad SearchPage');
   }
 
+  searchUser($user){
+    console.log('prout')
+  }
+
 }

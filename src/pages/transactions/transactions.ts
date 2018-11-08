@@ -29,6 +29,7 @@ export class TransactionsPage {
   }
 
   init(){
+
     this.transactionTest.from="toto";
     this.transactionTest.to="tata";
     this.transactionTest.amount=200;

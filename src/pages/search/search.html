@@ -14,5 +14,13 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Recipient</ion-label>
+      <ion-input [(ngModel)]="user" name="recipient" type="text"></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button (click)="searchUser(user)">Rechercher</button>
+  </ion-list>
 
 </ion-content>

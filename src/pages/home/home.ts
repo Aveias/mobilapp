@@ -33,6 +33,10 @@ export class HomePage {
         this.navCtrl.push(BuyPage);
         break;
       }
+      case 'contact':{
+        this.navCtrl.push(ContactsPage);
+        break;
+      }
       case 'send':{
         this.navCtrl.push(SendPage);
         break;
