@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GitsonProvider} from "../../providers/gitson/gitson";
 
 /**
  * Generated class for the SearchPage page.
@@ -15,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SearchPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public gitsonProvider : GitsonProvider) {
   }
 
   ionViewDidLoad() {
@@ -25,6 +26,11 @@ export class SearchPage {
   searchUser($user){
 
     console.log('prout')
+    //TEMPORARY, TO TEST GET HTTP
+    this.gitsonProvider.getUrl()
+      .then(data => {
+          console.log(data)
+      })
 
   }
 

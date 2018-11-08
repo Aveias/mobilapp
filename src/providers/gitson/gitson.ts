@@ -15,7 +15,16 @@ export class GitsonProvider {
 
   constructor(public http: HttpClient) {
     console.log('Hello GitsonProvider Provider');
-    this.http.get("https://raw.githubusercontent.com/Aveias/mobilapp/dev/resources/raw/config.json");
+  }
+
+  getUrl(){
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl).subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      })
+    })
   }
 
 }
