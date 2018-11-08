@@ -7,17 +7,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>home</ion-title>
+    <ion-title>Mon compte</ion-title>
+    <ion-buttons>
+      <button ion-item (click)="closeConnexion()">Se déconnecter</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
+  <p class="welcome-text">Bonjour, François Pignon</p>
+  <ion-card>
+    <ion-card-header>
+      Solde actuel
+    </ion-card-header>
+    <ion-card-content>
+      <p class="balance">567,38</p>
+      <p>Gonettes</p>
+    </ion-card-content>
+  </ion-card>
+
   <ion-buttons>
-    <button ion-button (click)="changePage('buy')">Acheter de la monnaie locale</button>
-    <button ion-button (click)="changePage('send')">Payer</button>
-    <button ion-button (click)="changePage('history')">Historique des transactions</button>
-    <button ion-button color="danger" (click)="closeConnexion()">Disconnect</button>
+    <button ion-item (click)="changePage('contact')">Contacts</button>
+    <button ion-item (click)="changePage('buy')">Acheter de la monnaie locale</button>
+    <button ion-item (click)="changePage('send')">Faire un virement</button>
+    <button ion-item (click)="changePage('history')">Historique des transactions</button>
   </ion-buttons>
 
 </ion-content>
