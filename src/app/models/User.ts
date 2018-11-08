@@ -6,5 +6,4 @@ export class User {
   email: string
   balance: number
   lastTransactions: Array<Transaction>
-
 }
