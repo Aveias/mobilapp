@@ -7,14 +7,28 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>send</ion-title>
+    <ion-title>Effectuer un virement</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-buttons>
-    <button ion-item (click)="changePage('search')">Chercher un contact</button>
-  </ion-buttons>
+  <ion-list>
+    <button ion-button (click)="changePage('contact')">Contacts</button>
+    <button ion-button (click)="changePage('search')">Chercher un contact</button>
+
+    <ion-item>
+      <ion-label stacked>Recipient</ion-label>
+      <ion-input [(ngModel)]="recipient" name="recipient" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Montant</ion-label>
+      <ion-input [(ngModel)]="amount" name="amount" type="number" value="10"></ion-input>
+    </ion-item>
+
+    <button ion-button (click)="t">Envoyer</button>
+
+  </ion-list>
 </ion-content>

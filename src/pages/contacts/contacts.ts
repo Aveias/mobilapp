@@ -22,4 +22,8 @@ export class ContactsPage {
     console.log('ionViewDidLoad ContactsPage');
   }
 
+  selectContact(contact) {
+    console.log('toto - '+contact)
+  }
+
 }

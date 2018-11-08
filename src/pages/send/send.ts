@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {SearchPage} from "../search/search";
+import {ContactsPage} from "../contacts/contacts";
 
 /**
  * Generated class for the SendPage page.
@@ -27,6 +28,10 @@ export class SendPage {
     switch (params) {
       case 'search':{
         this.navCtrl.push(SearchPage);
+        break;
+      }
+      case 'contact':{
+        this.navCtrl.push(ContactsPage);
         break;
       }
     }
