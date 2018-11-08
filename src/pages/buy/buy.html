@@ -23,7 +23,7 @@
 
     <ion-item>
       <ion-label stacked>N° de carte</ion-label>
-      <ion-input type="number"></ion-input>
+      <ion-input [(ngModel)]="cardnumber" name="cardnumber" type="number" min="0000000000000000" max="9999999999999999"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -31,17 +31,36 @@
       <ion-input type="text"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label stacked>Date d'expiration</ion-label>
-      <ion-input type="number"></ion-input>
-    </ion-item>
+
+
+      <ion-grid>
+        <ion-row class="cb-date">
+          <ion-col col-5>
+            <ion-item>
+              <ion-label stacked>Date d'expiration</ion-label>
+            <ion-input [(ngModel)]="mounth" name="mounth" type="number" min="1" max="12"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-2> / </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-5>
+            <ion-item>
+              <ion-input [(ngModel)]="year" name="year" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
 
     <ion-item>
       <ion-label stacked>Cryptogramme</ion-label>
-      <ion-input type="number"></ion-input>
+      <ion-input [(ngModel)]="cryp" name="cryp" type="number" min="000" max="999"></ion-input>
     </ion-item>
 
-    <button ion-button (click)="sendTransaction(amount)">Payer {{amount}} €</button>
+    <button ion-button (click)="sendTransaction(cardnumber, mounth, year, cryp, amount)">Payer {{amount}} €</button>
 
 
   </ion-list>
