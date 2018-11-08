@@ -25,7 +25,7 @@ export class BuyPage {
 
   sendTransaction($amount) {
     //TODO : Contacter l'API et proposer la transaction. L'API répondra true ou False
-    if (true) {
+    if (true === true) {
       this.navCtrl.popToRoot();
     }
     else {
