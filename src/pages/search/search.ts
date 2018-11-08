@@ -23,7 +23,9 @@ export class SearchPage {
   }
 
   searchUser($user){
+
     console.log('prout')
+
   }
 
 }
