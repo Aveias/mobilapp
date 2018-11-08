@@ -13,6 +13,7 @@ import { ContactsPage } from "../pages/contacts/contacts";
 import { SendPage} from "../pages/send/send";
 import { TransactionsPage} from "../pages/transactions/transactions";
 import { SearchPage } from "../pages/search/search";
+import { GitsonProvider } from '../providers/gitson/gitson';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SearchPage } from "../pages/search/search";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GitsonProvider,
   ]
 })
 export class AppModule {}
